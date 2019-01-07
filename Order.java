@@ -34,9 +34,7 @@ public class Order {
 	@Column(name="address", updatable=false, nullable=false)
 	private String address;
 	
-	@Column(name="cart", updatable=false, nullable=false)
-	private String cart;
-	//done with the attributes
+	//WORK IN PROGRESS: adding reference to the items in the cart
 
 	//Default constructor
 	public Order(){}
