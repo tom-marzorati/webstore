@@ -1,0 +1,26 @@
+<script type="text/javascript">
+function validateForm(form) {
+
+if (!form.username.value.match(/^[\w\d]{3,8}$/i)) {
+alert("Username deve avere min 3 max 8 caratteri alfanumerici");
+return false;
+}
+
+if (form.password.value.match(/^[\w\d]{6,16}$/i)) {
+if ((password.value.match(/[A-Z]/)) &&
+(password.value.match(/[a-z]/)) &&
+(password.value.match(/[0-9]/))) {
+return true;
+}
+else {
+alert('Usa almeno un carattere maiuscolo, uno minuscolo e una cifra');
+return false;
+}
+}
+else {
+alert("Password deve avere min 6 max 16 caratteri alfanumerici");
+return false;
+}
+
+}
+</script>
